@@ -1,0 +1,276 @@
+body{
+    
+    background-color:black;
+    color:white;
+    font-family:Arial,Helvetica,sans-serif;
+}
+.header
+{
+    
+    height:100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/header-image.png);
+    background-size:cover;
+    background-position:center;
+    padding:10px 8%;
+    position:relative;
+}
+nav{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:10px 0;
+}
+.logo
+{
+    width:150px;    
+    cursor:pointer;
+}
+nav button{
+    border:0;
+    outline:0;
+    background:rgb(255, 0, 0);
+    color:white;
+    padding:7px 20px;
+    font-size:12px;
+    border-radius:4px;
+    cursor:pointer;
+}
+.bt1
+{
+    display:inline-flex;
+    align-items:center;
+    background:transparent;
+    border:1px solid white;
+    padding:7px 10px;
+}
+.bt1 img
+{
+    width:10px;
+    margin-left:10px;
+}
+.header-content
+{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+    margin-top:100px;
+   
+}
+.header-content h1
+{
+    font-size:40px;
+    line-height:70px;
+    font-weight:900;
+   
+   
+   
+}
+.header-content h3
+{
+    font-weight:300;
+    margin-bottom:20px; 
+    font-size:30px;
+}
+.header-content p{
+    font-size:19px;
+}
+.email1
+{ 
+    
+    border-radius:4px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-top:30px;
+    overflow:hidden;
+}
+.email1 input{
+    flex:1;
+    border:0;
+    outline:0;
+    border-radius:4px;
+    margin-left:20px;
+     background:transparent;
+    border:1px solid white;
+    padding:15px 30px;
+   
+}
+.email1 button{
+    border:0;
+    outline:0;
+    background-color: red;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    border-radius:4px;
+    padding:15px 30px;
+}
+.features
+{
+    
+    padding:50px 12%;
+    font-size:22px;
+
+}
+.row1
+{
+    width:100%;
+   
+    
+    display:flex;
+    
+    align-items:center;
+    flex-wrap:wrap;
+    padding:50px 0;
+    
+}
+
+.col1
+{
+    
+    flex-basis:50%;
+    margin-bottom: 20px;
+}
+.col1 h2{
+    
+    font-size:50px;
+    font-weight:700;
+    margin-bottom:20px;
+   
+
+}
+.col1 p{
+    font-size:25px;
+}
+.col2
+{
+    flex-basis:50%;
+    margin-bottom: 20px;
+}
+.col2 img
+{
+    display:block;
+    width:90%;
+    margin:auto;
+}
+.faq
+{
+   
+    padding:10px 12%;
+    text-align:center;
+    font-size:18px;
+}
+.faq h2{
+    font-size:45px;
+    font-weight:700;
+}
+.accordion
+{
+    margin:60px auto;
+    width:100%;
+    max-width:750px;
+}
+.accordion li{
+    list-style:none;
+    width:100%;
+    padding:5px;
+}
+.accordion li label{
+    display:flex;
+    align-items:center;
+    padding:20px;
+    font-size:18px;
+    font-weight:500;
+    background:#303030;
+ margin-bottom:2px;
+ cursor:pointer;
+ position:relative;
+   
+}
+label::after{
+    content:'+';
+    font-size:35px;
+    position:absolute;
+    right:20px;
+    transition:transform 0.5s;
+    
+}
+.accordion li input{
+    display:none;
+}
+.accordion .content{
+    background:#303030;
+    text-align:left;
+    padding:0 20px;
+    max-height:0;
+    overflow:hidden;
+    transition:max-height 0.5s,padding 0.5s;
+}
+.accordion input[type="radio"]:checked +label +.content
+{
+    max-height:600px;
+    padding:30px 20px;
+}
+.accordion input[type="radio"]:checked+label::after{
+    transform:rotate(135deg);
+}
+.faq p{
+    font-size:19px;
+}
+.faq .email1{
+    max-width:700px;
+    margin:20px auto 60px;
+}
+.footer
+{
+    padding:50px 15% 10px;
+    border-top:6px solid #333;
+    color:rgba(247, 241, 241, 0.719);
+    
+    
+}
+.footer h2 a{
+    color:rgba(247, 241, 241, 0.719);
+} 
+.footer h2{
+  
+    font-size:18px;
+    font-weight:400;
+    margin-bottom:30px;
+}
+.footer .row
+
+{
+    display:flex;
+    flex-wrap:wrap;;
+}
+
+.footer .col {
+    
+    flex-basis:25%;
+    flex-grow:1;
+    margin-bottom:20px;
+
+}
+.footer .col a
+
+{
+    display:block;
+    
+    color:rgba(247, 241, 241, 0.719);
+    font-size:14px;
+    margin-bottom:10px;
+}
+.footer .bt1
+{
+    color:#fff;
+    padding:10px 20px;
+    border-radius:4px;
+    font-weight:600;
+}
+.last
+{
+    font-size:14px;
+}
